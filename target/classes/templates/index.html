@@ -7,8 +7,7 @@
     <h1>Web Scraper</h1>
     <form action="/scrape" method="post">
         <label for="url">URL:</label>
-        <input type="text" id="url" name="url" required><br><br>
-
+        <input type="text" id="url" name="url" placeholder="Provide Complete URL with http/https" required><br><br>
         <label>Select Tags:</label><br>
         <input type="checkbox" id="div" name="tags" value="div">
         <label for="div">div</label><br>
@@ -18,7 +17,10 @@
         <label for="a">a</label><br>
         <input type="checkbox" id="input" name="tags" value="input">
         <label for="input">input</label><br><br>
-
+        <input type="checkbox" id="image" name="tags" value="image">
+        <label for="input">image</label><br><br>
+        <input type="checkbox" id="button" name="tags" value="button">
+        <label for="input">button</label><br><br>
         <button type="submit">Submit</button>
     </form>
 </body>
