@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Scraped Results</title>
+</head>
+<body>
+    <h1>Scraped Results</h1>
+    <p><strong>URL:</strong> <span th:text="${url}"></span></p>
+    <div th:if="${scrapedData}">
+        <h2>Data:</h2>
+        <ul>
+            <li th:each="entry : ${scrapedData}">
+                <strong th:text="${entry.key}"></strong>: <span th:text="${entry.value}"></span>
+            </li>
+        </ul>
+    </div>
+    <a href="/">Back</a>
+</body>
+</html>

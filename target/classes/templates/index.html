@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Web Scraper</title>
+</head>
+<body>
+    <h1>Web Scraper</h1>
+    <form action="/scrape" method="post">
+        <label for="url">URL:</label>
+        <input type="text" id="url" name="url" required><br><br>
+
+        <label>Select Tags:</label><br>
+        <input type="checkbox" id="div" name="tags" value="div">
+        <label for="div">div</label><br>
+        <input type="checkbox" id="title" name="tags" value="title">
+        <label for="title">title</label><br>
+        <input type="checkbox" id="a" name="tags" value="a">
+        <label for="a">a</label><br>
+        <input type="checkbox" id="input" name="tags" value="input">
+        <label for="input">input</label><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
